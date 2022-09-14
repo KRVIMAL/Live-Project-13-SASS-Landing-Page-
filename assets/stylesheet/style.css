@@ -1,0 +1,483 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans',sans-serif;
+  box-sizing: border-box;
+}
+
+
+:root{
+  --blue:#7030CC;
+  --white:#ffffff;
+}
+
+header{
+ background: var(--blue);
+}
+
+header .container{
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+header .navbar a{
+  margin-right: 3rem;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+
+.link-active{
+  color: rgba(223, 21, 156, 0.918);
+  border-bottom: 2px solid red;
+}
+button{
+  color: white;
+  background-color: skyblue;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero{
+  margin-top: 2rem;
+}
+
+.hero .left h1{
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  }
+
+.hero .left{
+  color: white;
+  margin-right: 2rem;
+}
+
+
+
+
+
+.hero .left p{
+  font-size: 1.2rem;
+font-weight: 400;
+letter-spacing: 1px;
+margin-bottom: 2rem;
+}
+
+
+
+/* section starts here */
+
+section{
+  background: var(--white);
+  margin: 5rem 0;
+}
+
+section .container{
+  margin: 0 auto;
+}
+section .right{
+  margin-left: 4rem;
+}
+
+section .right h1{
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+.text-container
+{
+  margin-bottom: 3rem;
+}
+
+.text-container h3
+{
+  font-size: 1.7rem;
+  margin-bottom: .8rem;
+}
+
+/* card- section */
+
+.card-section >h1{
+  font-size: 3rem;
+}
+
+.card-container{
+	display: flex;
+	align-items: center;
+	margin-top: 10rem;
+	justify-content: center;
+	gap: 3rem;
+  flex-wrap: wrap;
+}
+
+
+.card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  margin-bottom: 4rem ;
+  margin-top: 2rem;
+	text-align: center;
+	width: 300px;
+	border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.card .top{
+	
+	width:300px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	padding: 3rem 0;
+}
+
+.card .top .image{
+	
+	
+	
+	width: 150px;
+	border-radius: 100%;
+}
+
+.card-1 .image {
+	background:#FAEAEB ;
+}
+
+
+ .card-2 .image{
+	background:#FBF0EE ;
+}
+
+.card-3 .image {
+	background:#E9F4F6 ;
+}
+
+.card-4 .image {
+	background:#F2E7F5 ;
+}
+
+
+.image img{
+	width: 50px;
+	margin: 3rem;
+} 
+.card .bottom{
+	
+	
+	border-top: 10px;
+	border-radius: 10px;
+}
+
+
+.card-active{
+	color: white;
+	background-color:rgb(235, 101, 235);
+}
+
+
+.card .bottom h1{
+	margin: 1rem 0;
+}
+
+.card .bottom p{
+	margin-bottom: 2rem;
+  
+}
+
+
+
+
+
+
+/* responsive design 1200px */
+
+
+@media(max-width:1200px)
+{
+
+  /* header starts her */
+  header .container{
+    width: 90%;
+  }
+
+  header .navbar {
+    margin-left: 1rem;
+  }
+
+
+  button{
+    color: white;
+    background-color: skyblue;
+    font-size: 1rem;
+    padding: .5rem .5rem;
+   
+  }
+
+  .hero .left h1{
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 2rem 0; 
+    }
+  
+    
+  .hero .left p{
+    font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  }
+
+
+
+
+/* section starts here */
+section{
+  
+  margin: 3rem 0;
+}
+
+section .container{
+ width: 90%;
+}
+
+
+section .right h1{
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.text-container
+{
+  margin-bottom: 2rem;
+}
+
+.text-container h3
+{
+  font-size: 1.2rem;
+  margin-bottom: .8rem;
+}
+/* card section starts here */
+
+
+.card-section >h1{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.card-container{
+	display: flex;
+  width: 90%;
+	align-items: center;
+	margin-top: 10rem;
+	justify-content:center;
+	gap:10rem;
+  flex-wrap: wrap;
+}
+
+.card-section .card-container .card{
+  margin: 3rem 0;
+  width: 270px;
+}
+
+}
+
+
+
+
+
+
+
+/* responsive design 800px */
+
+
+@media(max-width:800px)
+{
+
+  /* header starts her */
+  header .container{
+    width: 90%;
+  }
+
+  header nav .left img{
+    width: 80px;
+  }
+  header .navbar {
+    margin-left: 1rem;
+  }
+  header .navbar a{
+    margin-right: 1rem;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  button{
+    color: white;
+    background-color: skyblue;
+    font-size: 1rem;
+    padding: .5rem .5rem;
+   
+  }
+
+  .hero .left h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 2rem 0; 
+    }
+  
+    
+  .hero .left p{
+    font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  }
+
+
+
+
+/* section starts here */
+section{
+  
+  margin: 3rem 0;
+}
+
+section .container{
+ width: 90%;
+}
+
+
+section .right h1{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.text-container
+{
+  margin-bottom: 2rem;
+}
+
+.text-container h3
+{
+  font-size: 1.2rem;
+  margin-bottom: .8rem;
+}
+/* card section starts here */
+
+
+.card-section >h1{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-container{
+	display: flex;
+  width: 90%;
+	align-items: center;
+	margin-top: 10rem;
+	justify-content: space-between;
+	gap:1rem;
+  
+  flex-wrap: wrap;
+}
+
+.card-section .card-container .card{
+  margin: 3rem 0;
+  width: 270px;
+}
+
+}
+
+@media(max-width:650px){
+nav .right{
+  display: none;
+}
+
+.hero{
+  flex-direction: column-reverse;
+}
+
+.hero .left{
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+
+.hero .left h1{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  }
+
+.hero .left p{
+  margin: 2rem 0;
+}
+.hero .right{
+  width: 100%;
+}
+
+.hero .right img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* section starts her */
+
+section .container{
+  flex-direction: column;
+
+}
+
+
+section .container .left{
+  width: 100%;
+  margin: 0 auto;
+}
+
+section .container .right .content-wrapper{
+  margin: 2rem 0;
+}
+
+section .right{
+  margin-left: 0rem;
+}
+
+section .right h1{
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+
+
+/*card section*/
+
+
+.card-section >h1{
+  font-size: 2rem;
+}
+
+.card-section .card-container{
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-section .card-container .card{
+  margin: 1rem 0;
+  width: 250px;
+}
+
+}
