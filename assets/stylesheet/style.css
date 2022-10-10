@@ -282,7 +282,7 @@ section .right h1{
 	justify-content:center;
 	gap:10rem;
   flex-wrap: wrap;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .card-section .card-container .card{
